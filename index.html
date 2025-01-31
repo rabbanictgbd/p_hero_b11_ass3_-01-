@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 3</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script> 
-    
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    
+
 </head>
+
 <body>
     <header>
-        
-        <nav class="flex items-center justify-between bg-yellow-50">
-            <div class="flex">
-                <img src="c1-assets/logo-header.png" alt="">
-                <a href="#" class="p-3"> Browse<span class="text-yellow-200">4</span>Pets</a>
+
+        <nav >
+            <div id="pc" class=" flex items-center justify-between bg-yellow-50" >
+                <div class="flex">
+                    <img src="c1-assets/logo-header.png" alt="">
+                    <a href="#" class="p-3"> Browse<span class="text-yellow-200">4</span>Pets</a>
+                </div>
+                <div>
+                    <a href="#">Find a Pets</a>
+                    <a href="#">Breeds</a>
+                    <a href="#">Conract us</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-bell p-3"></i>
+                    <i class="fa-solid fa-magnifying-glass p-3"></i>
+                    <button class="px-3 rounded-lg m-3 border-2 border-yellow-300">Loging</button>
+                    <button class="px-3 rounded-lg m-3 border-2 border-yellow-300 bg-yellow-300">Register</button>
+                </div>
             </div>
-            <div>
-                <a href="#">Find a Pets</a>
-                <a href="#">Breeds</a>
-                <a href="#">Conract us</a>
-            </div>
-            <div>
-               <i class="fa-solid fa-bell p-3"></i>
-                <i class="fa-solid fa-magnifying-glass p-3"></i>
-                <button class="px-3 rounded-lg m-3 border-2 border-yellow-300">Loging</button>
-                  <button class="px-3 rounded-lg m-3 border-2 border-yellow-300 bg-yellow-300">Register</button>
+            <div id="mobile" class="hidden  flex items-center justify-between bg-yellow-50">
+                <div>
+                    <img src="c1-assets/logo-header.png" alt="">
+                </div>
+                <div>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
         </nav>
     </header>
@@ -38,7 +50,8 @@
     </main>
 
     <footer>
-        
+
     </footer>
 </body>
+
 </html>
