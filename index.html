@@ -17,7 +17,7 @@
     <header>
 
         <nav>
-            <div id="pc" class=" flex items-center justify-between bg-yellow-50 lg:px-20">
+            <div id="pc" class=" hidden lg:flex items-center justify-between bg-yellow-50 lg:px-20">
                 <div class="flex">
                     <img src="c1-assets/logo-header.png" alt="">
                     <a href="#" class="p-3"> Browse<span class="text-yellow-200">4</span>Pets</a>
@@ -34,7 +34,7 @@
                     <button class="px-3 rounded-lg m-3 border-2 border-yellow-300 bg-yellow-300">Register</button>
                 </div>
             </div>
-            <div id="mobile" class="hidden  flex items-center justify-between bg-yellow-50">
+            <div id="mobile" class="sm:hidden md:hidden  flex items-center justify-between bg-yellow-50">
                 <div>
                     <img src="c1-assets/logo-header.png" alt="">
                 </div>
@@ -47,12 +47,11 @@
 
     <main>
         <!-- Banner section -->
-        <div class="Banner ">
+        <div class="Banner">
             <div class="lg:p-20 ">
                 <!-- q? sm/lg format -->
                 <div class="absolute  lg:w-1/2 sm:w-3/4  ">
-                    <h1 class=" text-5xl
-                ">Pamper Your Pet, Because They Deserve the Bes
+                    <h1 class=" lg:text-5xl sm:xl">Pamper Your Pet, Because They Deserve the Bes
 
                     </h1>
                     <h5 class="text-sm p-3">
@@ -68,6 +67,35 @@
                 </div>
             </div>
         </div> <!-- Banner section end -->
+        <!-- extra section -->
+         <div>
+            <div class="lg:p-20">
+                <div>
+                    <h1 class="text-3xl font-bold ">
+                        Special Offer
+                    </h1>
+                </div>
+                <div class="bg-gradient-to-tr from-blue-200 to-red-200 flex rounded-lg  items-center my-5 p-5  ">
+                    <div>
+                        
+                        <h3 class="text-2xl font-bold">Buy the pet & Get the T-Shirt Free!!</h3>
+                        
+                        <h2 class="text-xl font-bold">$7.99</h2>
+                    </div>
+                    <div class="relative">
+                       
+                        <div class="flex justify-around">
+                            <div><img src="c1-assets/cat_free.png" alt=""></div>
+                            <div>
+                            <div><img src="c1-assets/free.png" alt=""></div>
+                            <div><img src="c1-assets/t_shirt.png" alt=""></div>
+                        </div>
+                        </div>
+
+                    </div>
+                </div> 
+            </div>
+         </div>
         <!-- category section -->
         <div class="lg:p-20">
             <div>
@@ -126,14 +154,14 @@
             </div>
         </div> <!-- category section end -->
         <!-- trending section -->
-        <div class="bg-orange-50">
-            <div class="lg:p-20 ">
+        <div class="bg-orange-50 lg:p-20">
+            <div class=" ">
                 <div>
                     <h1 class="text-lg font-bold">Trending Pet Products</h1>
                 </div>
                 <div >
-                    <div class="grid grid-cols-5">
-                        <div class="bg-yellow-200 text-center rounded-lg p-2 m-2 col-span-2 row-span-3">
+                    <div class="grid lg:grid-cols-5 sm:grid-cols-2">
+                        <div class="bg-yellow-200 text-center rounded-lg p-2 m-2 col-span-2 row-span-3 relative">
                             <!-- q? can't select the card in figma -->
                             <div class="">
                                 <h1 class="text-lg font-bold">T- Shirt For Dogs</h1>
@@ -142,7 +170,7 @@
                             </div>
                             <!-- q? absolute-relative -->
                             <div class="bg-yellow-200 w-25">
-                                <img class=" absolute left-10bottom-50" src="c1-assets/cute-pet-small.png" alt="">
+                                <img class=" absolute  bottom-0 right-0" src="c1-assets/cute-pet-small.png" alt="">
                             </div>
                         </div>
                         <!-- small card -->
@@ -159,7 +187,29 @@
                         </div>
                         <div class="flex p-2 m-2 rounded-lg bg-white">
                             <div class="bg-white p-2 rounded-lg">
-                                <img class="bg-orange-50 p-2 rounded-lg" src="c1-assets/dog-cartoon.png" alt="">
+                                <img class="bg-orange-50 p-2 rounded-lg" src="c1-assets/cat-cartoon.png" alt="">
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-star text-yellow-300"><span class="text-black"> 4.5</span></i>
+                                <h5>Pet Bed</h5>
+                                <h6>$39.99</h6>
+
+                            </div>
+                        </div>
+                        <div class="flex p-2 m-2 rounded-lg bg-white">
+                            <div class="bg-white p-2 rounded-lg">
+                                <img class="bg-orange-50 p-2 rounded-lg" src="c1-assets/fish-cartoon.png" alt="">
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-star text-yellow-300"><span class="text-black"> 4.5</span></i>
+                                <h5>Pet Bed</h5>
+                                <h6>$39.99</h6>
+
+                            </div>
+                        </div>
+                        <div class="flex p-2 m-2 rounded-lg bg-white">
+                            <div class="bg-white p-2 rounded-lg">
+                                <img class="bg-orange-50 p-2 rounded-lg" src="c1-assets/bird-cartoon.png" alt="">
                             </div>
                             <div>
                                 <i class="fa-solid fa-star text-yellow-300"><span class="text-black"> 4.5</span></i>
@@ -181,7 +231,7 @@
                         </div>
                         <div class="flex p-2 m-2 rounded-lg bg-white">
                             <div class="bg-white p-2 rounded-lg">
-                                <img class="bg-orange-50 p-2 rounded-lg" src="c1-assets/dog-cartoon.png" alt="">
+                                <img class="bg-orange-50 p-2 rounded-lg" src="c1-assets/rabbit-cartoon.png" alt="">
                             </div>
                             <div>
                                 <i class="fa-solid fa-star text-yellow-300"><span class="text-black"> 4.5</span></i>
@@ -192,7 +242,7 @@
                         </div>
                         <div class="flex p-2 m-2 rounded-lg bg-white">
                             <div class="bg-white p-2 rounded-lg">
-                                <img class="bg-orange-50 p-2 rounded-lg" src="c1-assets/dog-cartoon.png" alt="">
+                                <img class="bg-orange-50 p-2 rounded-lg" src="c1-assets/fish-cartoon.png" alt="">
                             </div>
                             <div>
                                 <i class="fa-solid fa-star text-yellow-300"><span class="text-black"> 4.5</span></i>
@@ -203,7 +253,7 @@
                         </div>
                         <div class="flex p-2 m-2 rounded-lg bg-white">
                             <div class="bg-white p-2 rounded-lg">
-                                <img class="bg-orange-50 p-2 rounded-lg" src="c1-assets/dog-cartoon.png" alt="">
+                                <img class="bg-orange-50 p-2 rounded-lg" src="c1-assets/mouse-cartoon.png" alt="">
                             </div>
                             <div>
                                 <i class="fa-solid fa-star text-yellow-300"><span class="text-black"> 4.5</span></i>
@@ -214,29 +264,7 @@
                         </div>
                         <div class="flex p-2 m-2 rounded-lg bg-white">
                             <div class="bg-white p-2 rounded-lg">
-                                <img class="bg-orange-50 p-2 rounded-lg" src="c1-assets/dog-cartoon.png" alt="">
-                            </div>
-                            <div>
-                                <i class="fa-solid fa-star text-yellow-300"><span class="text-black"> 4.5</span></i>
-                                <h5>Pet Bed</h5>
-                                <h6>$39.99</h6>
-
-                            </div>
-                        </div>
-                        <div class="flex p-2 m-2 rounded-lg bg-white">
-                            <div class="bg-white p-2 rounded-lg">
-                                <img class="bg-orange-50 p-2 rounded-lg" src="c1-assets/dog-cartoon.png" alt="">
-                            </div>
-                            <div>
-                                <i class="fa-solid fa-star text-yellow-300"><span class="text-black"> 4.5</span></i>
-                                <h5>Pet Bed</h5>
-                                <h6>$39.99</h6>
-
-                            </div>
-                        </div>
-                        <div class="flex p-2 m-2 rounded-lg bg-white">
-                            <div class="bg-white p-2 rounded-lg">
-                                <img class="bg-orange-50 p-2 rounded-lg" src="c1-assets/dog-cartoon.png" alt="">
+                                <img class="bg-orange-50 p-2 rounded-lg" src="c1-assets/bird-cartoon.png" alt="">
                             </div>
                             <div>
                                 <i class="fa-solid fa-star text-yellow-300"><span class="text-black"> 4.5</span></i>
@@ -249,10 +277,80 @@
                 </div>
             </div>
         </div>
+        <!-- low price section -->
+        <div class="lg:p-20">
+            <div>
+                <h1 class="text-lg font-bold">Everyday low Price</h1>
+            </div>
+            <div class="grid lg:grid-cols-12">
+                <div class="bg-gradient-to-tr from-blue-200 to-red-200 flex p-5 m-5 rounded-lg lg:col-span-7 items-center">
+                    <div>
+                        <h4 >Under Price</h4>
+                        <h3 class="text-lg">Pet Grooming Mitt</h3>
+                        <h4 class="text-white">(Easy Hair Removal)</h4>
+                        <h2 class="text-xl font-bold">$7.99</h2>
+                    </div>
+                    <div class="">
+                        <img class="w-24 " src="c1-assets/cute-dog-mid.png" alt="">
+                    </div>
+                </div>
+                <div class="bg-gradient-to-tl from-yellow-200 to-white-200 flex p-5 m-5 rounded-lg lg:col-span-5 items-center">
+                    <div>
+                        
+                        <h3 class="text-lg">T- Shirt For dog</h3>
+                        
+                        <h2 class="text-xl font-bold text-yellow-300">$7.99</h2>
+                    </div>
+                    <div class="">
+                        <img class="w-24 " src="c1-assets/cute-pet-small.png" alt="">
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+        
+        
     </main>
-
-    <footer>
-
+<!-- footer section -->
+    <footer class="bg-yellow-200 relative lg:h-[700px]">
+        <!-- get news section -->
+        <div class="lg:p-20 absolute bottom-20 w-full">
+            <div class="bg-yellow-50 flex justify-around flex-row-reverse  -bottom-50 right-50 lg:w-99">
+                <div class=" content-center">
+                    <h4 class="text-2xl" >Get Pawsome News!</h4>
+                    <h3 class="text-xl">Exclusive training tips, ticks, product deals and more.</h3>
+                    <input placeholder="Enter email...." type="text"> <br>
+                    <button class="bg-yellow-200 px-2">Subscribe</button>
+                </div>
+                <div class="">
+                    <img class="w-25 " src="c1-assets/cute-pet-mid.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="lg:grid grid-cols-3 place-items-center lg:p-20">
+            <div class="">
+                <img src="c1-assets/logo-footer.png" alt="">
+                <h1><a href="#" class=""> Browse<span class="text-yellow-200">4</span>Pets</a> </h1>
+                <p>
+                    Discover a world of treats, toys, and essentials handpicked for your furry friends
+                </p>
+            </div>         
+            <div>
+                <ul>
+                    <li>Find a Pet</li>
+                    <li>Breed</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
     </footer>
 </body>
 
